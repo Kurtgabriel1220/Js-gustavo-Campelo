@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+/* Img */ 
+.nirvanaMtv{
+    height: 400px;
+    width: 400px;
+}
+
+.darkSide {
+    width: 400px;
+    height: 400px;
+}
+
+.dirt {
+    width: 400px;
+    height: 400px;
+}
+
+
+
+.divPai {
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    flex-direction: column;
+    
+}
+
+.divPai img {
+
+}
+
+.slider {
+    gap: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider img {
+    width: 400px;
+    opacity: 0;
+    transition: all .8s;
+}
+
+.slider img:not(:first-child) {
+    position: absolute;
+} 
+
+.slider img.ativo{
+    opacity: 1;
+}
+
+
+
+/* buttons */
+
+.nav {
+    display: flex;
+    gap: 5px;
+    height: 30px;
+}
+
+.buttons {
+    font-size: 18px;
+    color: rgba(160, 152, 152, 0.685);
+}
