@@ -280,14 +280,39 @@ console.log(Object.values(dados))
 
 
 let botaoProximo = document.querySelector(".proximo")
+let botaoAnterior = document.querySelector('.anterior')
+let slider = document.querySelectorAll('img')
+
+let contador = 0 
 
 console.log(document.querySelector('.ativo').classList)
 
 botaoProximo.onclick = function nextSlider(){
     document.querySelector('.ativo').classList.remove('ativo')
-    document.querySelector('.darkSide').classList.add('ativo')
+
+    if(contador < 2) {
+        contador = contador + 1
+        
+    }else{
+        contador = 0
+    }
+
+
+    console.log(contador)
+
+    slider[contador].classList.add('ativo')
 }
 
+botaoAnterior.onclick = function backSlider(){
+    document.querySelector('img.ativo').classList.remove('ativo')    
+    if(contador > 0 ){
+        contador = contador - 1
+    }else{
+        contador = 2
+    }
+    slider[contador].classList.add('ativo')
+    
+}
 
 
 
