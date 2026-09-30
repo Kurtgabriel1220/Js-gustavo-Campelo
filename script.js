@@ -279,7 +279,7 @@ console.log(Object.values(dados))
 
 
 
-let botaoProximo = document.querySelector(".proximo")
+/* let botaoProximo = document.querySelector(".proximo")
 let botaoAnterior = document.querySelector('.anterior')
 let slider = document.querySelectorAll('img')
 
@@ -312,7 +312,169 @@ botaoAnterior.onclick = function backSlider(){
     }
     slider[contador].classList.add('ativo')
     
+} */
+
+
+/*
+
+const numero = 10
+const string = '20.9'
+const numeroQuebrado = 10.8
+
+
+console.log(Number.parseFloat(string))
+
+console.log(Number.parseInt(string, 2))
+
+console.log(numeroQuebrado.toFixed(2))
+
+console.log(numero.toString())
+
+console.log() */
+
+
+
+/* console.log(Math.abs(1.6))
+
+console.log(Math.ceil(2.4))
+
+console.log(Math.floor(2.50))
+
+console.log(Math.round(2.50))
+
+console.log((Math.random() * 1000).toFixed())
+
+
+console.log(Math.max(2, 5, 100, 1034804))
+
+console.log(Math.min(1, 0, 200, 20))
+ */
+
+
+/* const hoje = new Date();
+
+console.log(hoje.getDate())
+
+console.log(hoje.getMonth())
+
+console.log(hoje.getFullYear())
+
+console.log(hoje.getHours())
+
+console.log(hoje.getMinutes())
+
+console.log(hoje.getDay())
+ */
+
+
+
+/* 
+function teste() {
+
+}
+
+if() {
+    
+}
+
+for() {
+
+}
+
+console.log(); */
+
+
+/* const string = 'tring'
+
+console.log(typeof string, string)
+
+const nuember = 19
+
+console.log(typeof nuember, nuember)
+
+const nueber = null;
+
+console.log(typeof nueber, nueber)
+
+let semAmorproprio;
+
+console.log(typeof semAmorproprio, semAmorproprio)
+
+const numero4 = true
+const numero5 = false
+
+console.log(`O tipo de ${numero4} E ${typeof numero4}`)
+console.log(typeof numero5, numero5)console.log(`O tipo de ${numero4} E ${typeof numero4}`)z */
+
+/* function teste1() {
+    valor = 'gabriel';
+}
+
+console.log(valor);
+
+if () {
+    const
+    let
+}
+
+for(let i = 1) {
+
+}
+*/
+
+
+/* Sincrono, Assincrono e promise. */
+
+
+/* const minhaPromise = new Promise((resolve, reject) => {
+    let condicao = false;
+
+
+
+    if(condicao){
+        resolve('Tudo certo xara')
+    } else {
+        reject('Tudo errado xara')
+    }
+}) 
+
+minhaPromise.then((resultado) => {
+    console.log(resultado)
+}).catch((error) => {
+    console.log(error)
+}) */
+
+/* 
+fetch('https://api.coingecko.com/api/v3/exchange_rates', {
+    mode: 'cors',
+    method: 'POST', 
+    body:{
+        name: 'Gabriel',
+        age: 16,
+        loc: "Fortaleza-CE"
+    },
+    headers:{
+
+    }
+}).then((data) => {
+    console.log(data)
+})
+ */
+/* 
+const obj = '{"name": "Gabriel", "age": 16}'
+const obj2 = {
+    nome: 'Dalva',
+    idade: 'Cleide'
 }
 
 
+console.log(JSON.parse(obj))
+console.log(JSON.stringify(obj2)) */
 
+
+async function getCoinData() {
+    const data = await fetch('https://api.coingecko.com/api/v3/exchange_rates?id=312423423&name=P')
+    console.log(data)
+}
+
+getCoinData()
