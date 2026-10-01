@@ -471,10 +471,60 @@ const obj2 = {
 console.log(JSON.parse(obj))
 console.log(JSON.stringify(obj2)) */
 
-
-async function getCoinData() {
-    const data = await fetch('https://api.coingecko.com/api/v3/exchange_rates?id=312423423&name=P')
+/* fetch('https://jsonplaceholder.typicode.com/posts').then((data) => {
     console.log(data)
+}) */
+
+/* Outra maneira de fazer a mesma coisa so que de forma mais "limpa" */
+
+/* async function getCoinData() {
+    try {
+        const data = await fetch('https://jsonplaceholder.typicode.com/posts');
+        const json = await data.json();
+        console.log(json);
+    } catch (error) {
+        console.log(error);
+    }
 }
 
-getCoinData()
+getCoinData();
+
+
+fetch('https://jsonplaceholder.typicode.com/posts').then((data) => {
+    console.log(data.json().then((json) => {
+        console.log(json);
+    }))
+}).catch((error) => {
+    console.log(error)
+    }) */
+
+/* window.localStorage.setItem('name', 'Gabriel');
+window.localStorage.setItem('age', 16);
+window.localStorage.setItem('endereco', 'Fortaleza-CE');
+window.localStorage.setItem('educacao', 'Ensino Superior');
+
+
+console.log(window.localStorage.getItem('name'));
+console.log(window.localStorage.getItem('age'));
+console.log(window.localStorage.getItem('endereco'));
+console.log(window.localStorage.getItem('educacao')); 
+ */
+/* window.sessionStorage.setItem('name', 'Gabriel');
+window.sessionStorage.setItem('age', 16);
+window.sessionStorage.setItem('endereco', 'Fortaleza-CE');
+window.sessionStorage.setItem('educacao', 'Ensino Superior');
+
+
+console.log(window.sessionStorage.getItem('name'));
+console.log(window.sessionStorage.getItem('age'));
+console.log(window.sessionStorage.getItem('endereco'));
+console.log(window.sessionStorage.getItem('educacao')); */
+
+/* 
+document.cookie = 'name=Gabriel' */
+
+import alerta from './module.js';
+import { calc } from './calc.js';
+
+alerta();
+console.log(calc(5, 10));
